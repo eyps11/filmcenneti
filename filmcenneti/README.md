@@ -1,7 +1,7 @@
 # Film Cenneti
 
 Film Cenneti is a web application that allows users to explore and watch movies. The application features a collection of films, detailed information about each film, and search functionality.
-
+ben buradayım
 ## Features
 - Browse a collection of movies
 - View details about each movie
