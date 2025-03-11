@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+    /* Add top and bottom padding to avoid overlap */
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#menu {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.menu-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-center .bolum {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu-center .bolum a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+/* Dropdown menü */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.bolum:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Ana İçerik */
+main {
+    padding: 40px 0;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Film Kartları Grid */
+.films-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.film-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.film-card:hover {
+    transform: scale(1.03);
+}
+
+.film-card img {
+    width: 100%;
+    display: block;
+}
+
+.film-card h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.film-card p {
+    padding: 0 10px 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.search-menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-menu .search-input {
+  width: 200px;
+}
+
+.search-menu .search-btn {
+  padding: 5px 10px;
+}
+footer nav#ort ul.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer nav#ort ul.pagination li.page-item {
+    margin: 0 5px;
+  }
+  
+  footer nav#ort ul.pagination li.page-item a.page-link {
+    display: block;
+    padding: 6px 12px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  footer nav#ort ul.pagination li.page-item:hover a.page-link {
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 5px 0px blue;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    
+    
+    
+    .wrapper {
+        /* Increase container gap and padding */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .card {
+        /* Increase card size slightly */
+        background: #000;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: auto;
+    }
+    
+    .poster {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .poster::before {
+        content: '';
+        position: absolute;
+        bottom: -45%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: .3s;
+    }
+    
+    .card:hover .poster::before {
+        bottom: 0;
+    }
+    
+    .poster img {
+        /* Ensure images fill the card */
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: .3s;
+    }
+    
+    .card:hover .poster img {
+        transform: scale(1.1);
+    }
+    
+    .details {
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 1.5em 1.5em 2em;
+        background: #000a;
+        backdrop-filter: blur(16px) saturate(120%);
+        transition: .3s;
+        color: #fff;
+        z-index: 2;
+    }
+    
+    .card:hover .details {
+        bottom: 0;
+    }
+    
+    .details h1,
+    .details h2 {
+        font-weight: 700;
+    }
+    
+    .details h1 {
+        font-size: 1.2em; /* Reduced from larger value */
+        margin-bottom: 5px;
+    }
+    
+    .details h2 {
+        font-weight: 400;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        opacity: .6;
+    }
+    
+    .details .rating {
+        position: relative;
+        margin-bottom: 15px;
+        display: flex;
+        gap: .25em;
+    }
+    
+    .details .rating i {
+        color: #e3c414;
+    }
+    
+    .details .rating span {
+        margin-left: 0.25em;
+        font-size: 0.75em;
+    }
+    
+    .details .tags {
+        display: flex;
+        gap: .375em;
+        margin-bottom: .875em;
+        font-size: 0.75em;
+    }
+    
+    .details .tags span {
+        padding: .35rem .65rem;
+        color: #fff;
+        border: 1.5px solid rgba(255 255 255 / 0.4);
+        border-radius: 4px;
+        border-radius: 50px;
+    }
+    
+    .details .desc {
+        color: #fff;
+        opacity: .8;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        font-size: 0.8em;
+    }
+    
+    .details .cast h3 {
+        margin-bottom: .5em;
+    }
+    
+    .details .cast ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.625rem;
+        width: 100%;
+    }
+    
+    .details .cast ul li {
+        list-style: none;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1.5px solid #fff;
+    }
+    
+    .details .cast ul li img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Fix menu and footer positions */
+    #menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    button
+    {
+        background-color: blue;
+        width: 100px;
+        height: 30px;
+        margin: 0% auto;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+    }
+    nav#ort {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

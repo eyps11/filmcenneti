@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <style>
+        /* Menu styles extracted from style.css */
+#menu {
+  width: 100%;
+  height: 68.48px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+.menu-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bolum {
+  position: relative;
+  margin: 0 15px;
+}
+
+.bolum a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.bolum a:hover {
+  background-color: rgb(66, 97, 111);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 150px;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.bolum:hover .dropdown-content {
+  display: block;
+}
+
+.search-menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-input {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 200px;
+}
+
+.search-btn {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+  </style>
+    <div id="menu">
+        <div class="menu-center container">
+          
+          <div class="bolum">
+            <a href="index.html"><span class="material-symbols-outlined">home</span></a>
+          </div>
+          <div class="bolum">
+            <a href="#">En iyi filmler</a>
+            <div class="dropdown-content">
+              <!-- Alt menü öğeleri -->
+            </div>
+          </div>
+          <div class="bolum">
+            <a href="#">Listeler</a>
+            <div class="dropdown-content">
+              <a href="#">Film A</a>
+              <a href="#">Film B</a>
+              <a href="#">Film C</a>
+              <a href="#">Film X</a>
+              <a href="#">Film Y</a>
+              <a href="#">Film Z</a>
+            </div>
+          </div>
+          <div class="bolum">
+            <a href="#">Seriler</a>
+            <div class="dropdown-content">
+              <!-- Alt liste öğeleri -->
+            </div>
+          </div>
+          <div class="bolum">
+            <a href="#">Türler</a>
+            <div class="dropdown-content">
+              <a href="#">Aile Filmleri</a>
+              <a href="#">Aksiyon Filmleri</a>
+              <a href="#">Belgeseller</a>
+              <a href="#">Bilim Kurgu Filmleri</a>
+              <a href="#">Blu Ray Filmler</a>
+              <a href="#">Gerilim Filmleri</a>
+              <a href="#">Fantastik Filmleri</a>
+              <a href="#">Dram Filmleri</a>
+              <a href="#">Çizgi Filmleri</a>
+              <a href="#">Gizem Filmleri</a>
+              <a href="#">Animasyon Filmleri</a>
+              <a href="#">Hint Filmleri</a>
+              <a href="#">Komedi Filmleri</a>
+              <a href="#">Korku Filmleri</a>
+              <a href="#">Macera Filmleri</a>
+              <a href="#">Müzikal Filmleri</a>
+              <a href="#">Polisiye Filmleri</a>
+              <a href="#">Psikolojik Filmleri</a>
+              <a href="#">Romantik Filmleri</a>
+              <a href="#">Savaş Filmleri</a>
+              <a href="#">Suç Filmleri</a>
+              <a href="#">Tarih Filmleri</a>
+              <a href="#">Yerli Filmleri</a>
+              <a href="#">Western Filmleri</a>
+            </div>
+          </div>
+          <div class="bolum">
+            <a href="iletişim.html">İletişim</a>
+          </div>
+          <div class="bolum">
+            <a href="KAYIT.HTML">Kayıt</a>
+          </div>
+          <!-- Search Box -->
+          <div class="bolum search-menu">
+            <input type="text" class="search-input form-control" placeholder="Arama yapın..." />
+            <button class="search-btn btn btn-primary">Ara</button>
+          </div>
+        </div>
+      </div>
+      
+    
+</body>
+</html>

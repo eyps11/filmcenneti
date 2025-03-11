@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+/* Ortak Menü Stil Ayarları */
+#menu {
+    width:100%;
+    height: 68.48px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin: 0% auto;
+}
+
+#menu {
+  background-color: #333;
+  padding: 20px 0; /* Menünün yukarı-aşağı boşluğunu artırdık */
+  min-height: 80px; /* İstenilen minimum yüksekliği ayarlar */
+}
+
+.menu-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+}
+
+.bolum {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu-center .bolum {
+  position: relative;
+  margin: 0 15px;
+}
+
+.bolum a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.menu-center .bolum a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.bolum a:hover {
+    background-color:rgb(66, 97, 111);;
+}
+
+/* Dropdown Menü */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  padding: 10px 0;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.bolum:hover .dropdown-content {
+    display: block;
+}
+
+.bolum:hover .dropdown-content {
+  display: block;
+}
+
+/* Menü İçinde Arama */
+.search-menu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-menu .search-input {
+    width: 200px;
+}
+
+.search-menu .search-input {
+  width: 200px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #007BFF;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 35px;
+    width: 400px;
+    background: white;
+    margin-left: 780px;
+    margin-top: -30px;
+}
+
+.search-input {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 460px;
+}
+
+.search-btn {
+    padding: 10px 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.menu1 {
+    display: inline-block;
+    width: 140px;
+}
+
+.menu1 a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+#film {
+    width: 1200px;
+    height: 70px;
+    background-color: green;
+    margin: 0% auto;
+}
+
+.menu1 {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+footer {
+    width: 1200px;
+    min-height: 80px; /* Adjusted to match #menu */
+    background-color: #2d4951;
+    margin: 0 auto;
+    padding: 20px 0; /* Added padding similar to #menu */
+    color: white;
+    text-align: center;
+    clear: both;
+}
+
+a:hover {
+    color: yellow;
+}
+
+
+.contact-container {
+    width: 615px;
+    height: 600px;
+    margin: 20px auto; /* Ortalamak için */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* İsteğe bağlı arka plan */
+    border: 1px solid #ccc;
+}
+
+.contact-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-container form input[type="text"],
+.contact-container form input[type="email"] {
+    width: 565px;
+    height: 37px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.contact-container form textarea {
+    width: 565px;
+    height: 142px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 5px;
+    resize: none;
+}
+
+.contact-container form button {
+    width: 150px;
+    height: 38px;
+    box-sizing: border-box;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-container form button:hover {
+    background-color: #0056b3;
+}
+
+h1
+{
+    color:black;
+    margin-top:50px;
+    text-align: left;
+}
+p
+{
+color: black;    
+}
+#container
+{
+    max-width: 1240px;
+    height: 1200px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+}
+footer
+{
+  width:100%; /* keep original width */
+  height: 100px;
+  background-color: #2d4951;
+  margin-top: 1400px;/* reduced margin-top to move footer down slightly */
+  color: white;
+  text-align: center;
+  clear: both;
+  padding-top: 20px;
+}
+
+footer nav#ort {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px ; /* Navigasyonu biraz aşağı iter */
+  display: inline-block;        /* Nav alanını içerik kadar geniş yapar */
+}
+
+footer nav#ort ul.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer nav#ort ul.pagination li.page-item {
+  margin: 0 5px;
+}
+
+footer nav#ort ul.pagination li.page-item a.page-link {
+  display: block;
+  padding: 6px 12px;
+  background-color: white;
+  color:black;
+
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 3px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+ul li
+{
+    margin-bottom: 50px;
+}
+footer nav#ort ul.pagination li.page-item:hover a.page-link {
+  background-color: black;
+  color: white;
+  box-shadow: 2px 2px 5px 0px blue;
+}
+h4
+{
+    text-align: left;
+    color: black;
+}
+
+.other-pages {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+.other-pages h4 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.other-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.other-link {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.other-link:hover {
+  border-color: #007BFF;
+}
+
+.other-films {
+  height: 50px; /* Küçük yükseklik */
+  background-color: red; /* Dublaj'deki arka plan rengiyle uyumlu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.other-films .other-links {
+  display: flex;
+  gap: 20px;
+}
+
+.other-films .other-link {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.other-films .other-link:hover {
+  border-bottom: 2px solid #007BFF;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  #menu {
+    padding: 20px;
+    min-height: 80px; /* Mobilde de aynı yüksekliği korur */
+  }
+
+  .menu-center {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-center .bolum {
+    margin: 5px 0;
+  }
+
+  .search-menu .search-input {
+    width: 100%;
+    max-width: 300px;
+  }
+}

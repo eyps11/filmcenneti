@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "title": "Kaderin İzinde",
+        "description": "Epik bir yolculuk ve dramatik anlar.",
+        "year": 2020,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 2,
+        "title": "Sonsuz Umut",
+        "description": "Zorluklar karşısında yılmayan bir aşk hikayesi.",
+        "year": 2019,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 3,
+        "title": "Gölge Oyunları",
+        "description": "Gizemli entrikalar ve sürükleyici aksiyon.",
+        "year": 2021,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 4,
+        "title": "Rüzgarın Sesi",
+        "description": "Doğa ile iç içe, büyüleyici bir öykü.",
+        "year": 2018,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 5,
+        "title": "Kırık Zamanlar",
+        "description": "Geçmişin izlerini taşıyan dramatik bir film.",
+        "year": 2022,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 6,
+        "title": "Ateş ve Su",
+        "description": "Zıt doğa güçlerinin çatıştığı epik film.",
+        "year": 2020,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 7,
+        "title": "Yitik Ruhlar",
+        "description": "Psikolojik gerilim dolu bir yapım.",
+        "year": 2017,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 8,
+        "title": "Gökyüzü Ötesi",
+        "description": "Bilim kurgu ve maceranın birleştiği film.",
+        "year": 2021,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 9,
+        "title": "Sessiz Çığlık",
+        "description": "Gerilim dolu sahneleriyle izleyenleri koltuğuna çivileyen yapım.",
+        "year": 2019,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 10,
+        "title": "Gizemli Gece",
+        "description": "Karanlık sırlar ve beklenmedik dönüşler.",
+        "year": 2020,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 11,
+        "title": "Yıldızlar Altında",
+        "description": "Romantik ve büyüleyici bir aşk hikayesi.",
+        "year": 2018,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 12,
+        "title": "Kayıp Hayaller",
+        "description": "Umutsuzluk ve yeniden doğuşun öyküsü.",
+        "year": 2022,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 13,
+        "title": "Sisli Yollar",
+        "description": "Merak uyandıran, gizemli bir yolculuk.",
+        "year": 2021,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 14,
+        "title": "Kan ve Gül",
+        "description": "Tarihten ilham alan epik bir dram.",
+        "year": 2017,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 15,
+        "title": "Yaşamın Renkleri",
+        "description": "Pozitif mesajlar ve sıcak bir öykü.",
+        "year": 2020,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 16,
+        "title": "Karanlıkta Kalan",
+        "description": "Gerilim ve aksiyonun başarılı birleşimi.",
+        "year": 2019,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 17,
+        "title": "Son Veda",
+        "description": "Dokunaklı ve unutulmaz bir veda öyküsü.",
+        "year": 2021,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 18,
+        "title": "Yeniden Başlangıç",
+        "description": "İkinci şansın önemini anlatan dokunaklı yapım.",
+        "year": 2020,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 19,
+        "title": "Ruhun Dansı",
+        "description": "Müzikal ögelerle bezenmiş enerjik bir film.",
+        "year": 2018,
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 20,
+        "title": "Sessizlik Sözleri",
+        "description": "Duygusal bir yolculuk ve içsel keşif.",
+        "year": 2022,
+        "image": "https://via.placeholder.com/150"
+    }
+]
